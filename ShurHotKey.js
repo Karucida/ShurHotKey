@@ -35,7 +35,7 @@ $(document).ready(function() {
         }
     }
 
-    if(event.shiftKey){    
+    if(event.altKey){    
     switch (event.which) {
         case 71:
             //71 g  GENERAL
