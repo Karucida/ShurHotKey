@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         ShurHotKey
-// @version      0.5
+// @version      0.6
 // @description  navegación rápida entre subforos y post con más de una página
 // @author       Karucida
 // @include      http://www.forocoches.com/foro/*
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js
 // @grant        none
 // @downloadURL    https://raw.githubusercontent.com/Karucida/ShurHotKey/master/ShurHotKey.min.user.js
-// @updateURL    https://raw.githubusercontent.com/Karucida/ShurHotKey/master/ShurHotKey.min.user.js
+// @updateURL    https://raw.githubusercontent.com/Karucida/ShurHotKey/master/ShurHotKey.meta.js
 // ==/UserScript==
 
 $(document).ready(function () {
@@ -20,7 +20,7 @@ $(document).ready(function () {
     urls['viajes'] = "http://www.forocoches.com/foro/forumdisplay.php?f=27";
     urls['kdd'] = "http://www.forocoches.com/foro/forumdisplay.php?f=15";
     $(document).keydown(function () {
-        if (!$("textarea:focus")) {
+        if (!$("textarea").is(":focus")) {
             if ($("a[rel='next']").text() == ">>" || $("a[rel='prev']").text() == "<<") {
                 //39 -> NEXT
                 if (event.which == 39) {
