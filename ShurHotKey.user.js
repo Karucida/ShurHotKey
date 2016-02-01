@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         ShurHotKey
-// @version      0.3
+// @version      0.4
 // @description  Recorre el foro con el teclado ->
 // @author       Karucida
 // @include      http://www.forocoches.com/foro/*
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js
 // @grant        none
-// @downloadURL    https://github.com/Karucida/ShurHotKey/blob/master/ShurHotKey.min.user.js
-// @updateURL    https://github.com/Karucida/ShurHotKey/blob/master/ShurHotKey.min.user.js
+// @downloadURL    https://github.com/Karucida/ShurHotKey/raw/master/ShurHotKey.user.js
+// @updateURL    https://github.com/Karucida/ShurHotKey/raw/master/ShurHotKey.user.js
 // ==/UserScript==
 
 $(document).ready(function () {
